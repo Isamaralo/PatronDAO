@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class Principal {
 
+	/**
+	 * Método que muestra por pantalla una lista de empleados.
+	 * @param lista_empleados Objeto que contiene la lista de empleados que se muestra.
+	 */
 	public static void mostrarLista (ArrayList<EmpleadoDTO> lista_empleados)
 	{
 		for (EmpleadoDTO empleado : lista_empleados) 
