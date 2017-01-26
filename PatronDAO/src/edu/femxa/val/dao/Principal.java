@@ -1,6 +1,6 @@
 package edu.femxa.val.dao;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Principal {
 
@@ -8,7 +8,7 @@ public class Principal {
 	 * Método que muestra por pantalla una lista de empleados.
 	 * @param lista_empleados Objeto que contiene la lista de empleados que se muestra.
 	 */
-	public static void mostrarLista (ArrayList<EmpleadoDTO> lista_empleados)
+	public static void mostrarLista (List<EmpleadoDTO> lista_empleados)
 	{
 		for (EmpleadoDTO empleado : lista_empleados) 
 		{
@@ -18,7 +18,7 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		EmpleadoDAO empleadoDAO = new EmpleadoDAO();
-		ArrayList<EmpleadoDTO> lista_empleados = null;
+		List<EmpleadoDTO> lista_empleados = null;
 		int id_depto = 50;
 		
 		lista_empleados = empleadoDAO.recuperarEmpleados(id_depto);

@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
 
 public class EmpleadoDAO {
 
@@ -13,9 +14,9 @@ public class EmpleadoDAO {
 	 * @param id_depto Id del departamento cuyos empleados quiero obtener
 	 * @return Lista de empleados del departamento de id id_depto
 	 */
-	public ArrayList<EmpleadoDTO> recuperarEmpleados (int id_depto)
+	public List<EmpleadoDTO> recuperarEmpleados (int id_depto)
 	{
-		ArrayList<EmpleadoDTO> lista_empleados = null;
+		List<EmpleadoDTO> lista_empleados = null;
 		lista_empleados = new ArrayList<EmpleadoDTO>();	
 		Connection conn = null;
 		Statement stmt = null;
