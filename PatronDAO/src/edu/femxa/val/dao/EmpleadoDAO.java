@@ -13,7 +13,7 @@ public class EmpleadoDAO {
 	 * @param id_depto Id del departamento cuyos empleados quiero obtener
 	 * @return Lista de empleados del departamento de id id_depto
 	 */
-	public static ArrayList<EmpleadoDTO> recuperarEmpleados (int id_depto)
+	public ArrayList<EmpleadoDTO> recuperarEmpleados (int id_depto)
 	{
 		ArrayList<EmpleadoDTO> lista_empleados = null;
 		lista_empleados = new ArrayList<EmpleadoDTO>();	

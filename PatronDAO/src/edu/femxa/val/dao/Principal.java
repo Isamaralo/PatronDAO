@@ -17,10 +17,11 @@ public class Principal {
 	}
 	public static void main(String[] args) {
 		
+		EmpleadoDAO empleadoDAO = new EmpleadoDAO();
 		ArrayList<EmpleadoDTO> lista_empleados = null;
 		int id_depto = 50;
 		
-		lista_empleados = EmpleadoDAO.recuperarEmpleados(id_depto);
+		lista_empleados = empleadoDAO.recuperarEmpleados(id_depto);
 		mostrarLista(lista_empleados);
 	}
 }
