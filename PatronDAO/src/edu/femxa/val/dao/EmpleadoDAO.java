@@ -8,6 +8,11 @@ import java.util.ArrayList;
 
 public class EmpleadoDAO {
 
+	/**
+	 * Método que recupera los datos de los empleados que hay en un departamento.
+	 * @param id_depto Id del departamento cuyos empleados quiero obtener
+	 * @return Lista de empleados del departamento de id id_depto
+	 */
 	public static ArrayList<EmpleadoDTO> recuperarEmpleados (int id_depto)
 	{
 		ArrayList<EmpleadoDTO> lista_empleados = null;
